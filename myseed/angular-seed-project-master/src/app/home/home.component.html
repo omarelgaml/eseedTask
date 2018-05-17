@@ -1,0 +1,10 @@
+<ng2-smart-table 
+[settings]="settings" 
+[source]="employees" 
+(createConfirm)="createEmployee($event)" 
+(editConfirm)="updateEmployee($event)" 
+(deleteConfirm)="deleteEmployee($event)">
+</ng2-smart-table>
+<button id="x"><a href="#/attendance">View and edit Attendance</a></button>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div> 

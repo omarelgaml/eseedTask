@@ -1,0 +1,14 @@
+<form class="login-form">
+  <p class="login-text">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-lock fa-stack-1x"></i>
+    </span>
+  </p>
+  <input type="email" name="u" class="login-username" autofocus="true" required="required" (input)="onUpdateEmail($event)"  placeholder="Email" />
+  <input type="password" name="p"  class="login-password" required="true" placeholder="Password" (input)="onUpdatePass($event)" />
+  <input type="submit" name="Login" value="Login" class="login-submit" (click)="onLogin()" />
+  
+</form>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div> 
